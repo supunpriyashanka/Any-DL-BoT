@@ -73,7 +73,7 @@ async def help(client, message):
 @Jebot.on_message(filters.command("about"))
 async def about(client, message):
     if message.chat.type == 'private':   
-        await bot.send_message(
+        await Jebot.send_message(
                chat_id=message.chat.id,
                text="""<b>About AnyDL Bot!</b>
 
