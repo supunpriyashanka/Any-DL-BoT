@@ -42,7 +42,7 @@ Hit help button to find out more about how to use me</b>""",
                                             "Channel", url="https://t.me/Infinity_BOTs")
                                     ],[
                                       InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/YT-Downloader-Bot")
+                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -66,7 +66,7 @@ Just send a Youtube or any video url to download it in video or audio format!
                                             "About", callback_data="about"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/YT-Downloader-Bot")
+                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -91,7 +91,7 @@ async def about(client, message):
                                         InlineKeyboardButton(
                                             "Back", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/YT-Downloader-Bot")
+                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
