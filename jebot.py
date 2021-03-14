@@ -40,6 +40,9 @@ Hit help button to find out more about how to use me</b>""",
                                             "Help", callback_data="help"),
                                         InlineKeyboardButton(
                                             "Channel", url="https://t.me/Infinity_BOTs")
+                                    ],[
+                                      InlineKeyboardButton(
+                                            "Source Code", url="https://github.com/ImJanindu/YT-Downloader-Bot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -50,9 +53,48 @@ async def help(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Just send a Youtube or any video url to download in video or audio format!
+               text="""<b>Just send a Youtube or any video url to download it in video or audio format!
 
-~ @Infinity_BOTs</b>""")
+~ @Infinity_BOTs</b>""",
+        reply_markup=InlineKeyboardMarkup(
+                                [[
+                                        InlineKeyboardButton(
+                                            "Back", callback_data="start"),
+                                        InlineKeyboardButton(
+                                            "About", callback_data="about"),
+                                  ],[
+                                        InlineKeyboardButton(
+                                            "Source Code", url="https://github.com/ImJanindu/YT-Downloader-Bot")
+                                    ]]
+                            ),        
+            disable_web_page_preview=True,        
+            parse_mode="html")
+
+@Jebot.on_message(filters.command("about"))
+async def about(client, message):
+    if message.chat.type == 'private':   
+        await bot.send_message(
+               chat_id=message.chat.id,
+               text="""<b>About AnyDL Bot!</b>
+
+<b>♞ Developer:</b> <a href="https://t.me/ImJanindu">Janindu 🇱🇰</a>
+
+<b>♞ Support:</b> <a href="https://t.me/InfinityBOTs_Support">Infinity BOTs Support</a>
+
+<b>♞ Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
+
+<b>~ @Infinity_BOTs</b>""",
+     reply_markup=InlineKeyboardMarkup(
+                                [[
+                                        InlineKeyboardButton(
+                                            "Back", callback_data="help"),
+                                        InlineKeyboardButton(
+                                            "Source Code", url="https://github.com/ImJanindu/YT-Downloader-Bot")
+                                    ]]
+                            ),        
+            disable_web_page_preview=True,        
+            parse_mode="html")
+
 
 # https://docs.pyrogram.org/start/examples/bot_keyboards
 # Reply with inline keyboard
@@ -246,11 +288,17 @@ async def callback_query_ignore_video(_, callback_query):
     await callback_query.answer("Ignored")
 
 @Jebot.on_callback_query()
-async def button(Jebot, update):
+async def button(bot, update):
       cb_data = update.data
       if "help" in cb_data:
         await update.message.delete()
-        await help(Jebot, update.message)
+        await help(bot, update.message)
+      elif "about" in cb_data:
+        await update.message.delete()
+        await about(bot, update.message)
+      elif "start" in cb_data:
+        await update.message.delete()
+        await start(bot, update.message)
 
 print(
     """
