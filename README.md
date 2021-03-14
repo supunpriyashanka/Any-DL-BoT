@@ -1,6 +1,6 @@
 # AnyDL Bot ❤
 
-## This bot can download video or audio from any website quickly! Can be found in telegram as [@JEAnyDLBot](https://t.me/JEAnyDLBot)
+## This bot can download video or audio from various websites quickly! Can be found in telegram as [@JEAnyDLBot](https://t.me/JEAnyDLBot)
 
 ### Deploy to Heroku 🏃‍♂
 
