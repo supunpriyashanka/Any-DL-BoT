@@ -8,8 +8,6 @@
 
 ### Credits:
 
-[AnyDL Bot](https://github.com/SpEcHiDe/AnyDLBot)
-
 [Infinity BOTs](https://t.me/Infinity_BOTs)
 
 [Pyrogram Library](https://github.com/pyrogram/pyrogram)
