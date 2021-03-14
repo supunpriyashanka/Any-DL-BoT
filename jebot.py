@@ -53,7 +53,9 @@ async def help(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Just send a Youtube or any video url to download it in video or audio format!
+               text="""<b>AnyDL Bot Help!
+
+Just send a Youtube or any video url to download it in video or audio format!
 
 ~ @Infinity_BOTs</b>""",
         reply_markup=InlineKeyboardMarkup(
