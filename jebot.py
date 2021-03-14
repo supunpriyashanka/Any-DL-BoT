@@ -106,16 +106,16 @@ async def about(client, message):
                    & filters.regex(YTDL_REGEX))
 async def ytdl_with_button(_, message: Message):
     await message.reply_text(
-        "**Choose download type:**",
+        "**Choose download type 🤗**",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Audio",
+                        "Audio 🎵",
                         callback_data="ytdl_audio"
                     ),
                     InlineKeyboardButton(
-                        "Video",
+                        "Video 🎬",
                         callback_data="ytdl_video"
                     )
                 ]
@@ -232,11 +232,11 @@ async def send_video(message: Message, info_dict, video_file):
             [
                 [
                     InlineKeyboardButton(
-                        "Forward",
+                        "Save ✅",
                         callback_data="forward_video"
                     ),
                     InlineKeyboardButton(
-                        "Ignore",
+                        "No ❌",
                         callback_data="ignore_video"
                     )
                 ]
