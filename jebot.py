@@ -236,8 +236,8 @@ async def send_video(message: Message, info_dict, video_file):
                         callback_data="forward_video"
                     ),
                     InlineKeyboardButton(
-                        "No ❌",
-                        callback_data="ignore_video"
+                        "Channel 🇱🇰",
+                        url="https://t.me/Infinity_BOTs"
                     )
                 ]
             ]
@@ -282,12 +282,6 @@ async def callback_query_forward_video(_, callback_query):
                                disable_notification=True)
     await callback_query.answer("Forwarded")
     await m_edited.reply(m_cp.link, quote=True)
-
-
-@Jebot.on_callback_query(filters.regex("^ignore_video$"))
-async def callback_query_ignore_video(_, callback_query):
-    await callback_query.message.edit_reply_markup(None)
-    await callback_query.answer("Ignored")
 
 @Jebot.on_callback_query()
 async def button(bot, update):
