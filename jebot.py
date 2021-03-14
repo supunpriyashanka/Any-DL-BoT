@@ -5,7 +5,8 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from youtube_dl import YoutubeDL
 from opencc import OpenCC
-from config import CHANNEL_FORWARD_TO
+
+CHANNEL_FORWARD_TO = -1001441164775
 
 Jebot = Client(
    "YT Downloader",
