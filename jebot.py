@@ -31,7 +31,7 @@ async def start(client, message):
                chat_id=message.chat.id,
                text="""<b>Hey There, I'm AnyDL Bot
 
-I can download video or audio from various websites. Made by @ImJanindu 🇱🇰
+I can download video or audio from Youtube. Made by @ImJanindu 🇱🇰
 
 Hit help button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
@@ -55,7 +55,7 @@ async def help(client, message):
                chat_id=message.chat.id,
                text="""<b>AnyDL Bot Help!
 
-Just send a Youtube or any video url to download it in video or audio format!
+Just send a Youtube url to download it in video or audio format!
 
 ~ @Infinity_BOTs</b>""",
         reply_markup=InlineKeyboardMarkup(
