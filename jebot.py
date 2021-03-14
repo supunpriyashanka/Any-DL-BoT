@@ -24,6 +24,36 @@ YTDL_REGEX = (r"^((?:https?:)?\/\/)"
 s2tw = OpenCC('s2tw.json').convert
 
 
+@Jebot.on_message(filters.command("start"))
+async def start(client, message):
+   if message.chat.type == 'private':
+       await Jebot.send_message(
+               chat_id=message.chat.id,
+               text="""<b>Hey There, I'm AnyDL Bot
+
+Made by @ImJanindu 🇱🇰
+
+Hit help button to find out more about how to use me</b>""",   
+                            reply_markup=InlineKeyboardMarkup(
+                                [[
+                                        InlineKeyboardButton(
+                                            "Help", callback_data="help"),
+                                        InlineKeyboardButton(
+                                            "Channel", url="https://t.me/Infinity_BOTs")
+                                    ]]
+                            ),        
+            disable_web_page_preview=True,        
+            parse_mode="html")
+
+@Jebot.on_message(filters.command("help"))
+async def help(client, message):
+    if message.chat.type == 'private':   
+        await Jebot.send_message(
+               chat_id=message.chat.id,
+               text="""<b>Just send a Youtube or any video url to download in video or audio format!
+
+~ @Infinity_BOTs</b>""")
+
 # https://docs.pyrogram.org/start/examples/bot_keyboards
 # Reply with inline keyboard
 @Jebot.on_message(filters.private
@@ -214,6 +244,13 @@ async def callback_query_forward_video(_, callback_query):
 async def callback_query_ignore_video(_, callback_query):
     await callback_query.message.edit_reply_markup(None)
     await callback_query.answer("Ignored")
+
+@Jebot.on_callback_query()
+async def button(Jebot, update):
+      cb_data = update.data
+      if "help" in cb_data:
+        await update.message.delete()
+        await help(Jebot, update.message)
 
 print(
     """
