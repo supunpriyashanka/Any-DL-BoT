@@ -30,19 +30,18 @@ async def start(client, message):
        await Jebot.send_message(
                chat_id=message.chat.id,
                text="""<b>Hey There, I'm AnyDL Bot
-
-I can download video or audio from Youtube. Made by @ImJanindu 🇱🇰
-
+Special thanks to @Infinity_BOTs
+I can download video or audio from Youtube. 
 Hit help button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
                                             "Help", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/Infinity_BOTs")
+                                            "Channel", url="https://t.me/music24x7SL")
                                     ],[
                                       InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
+                                            "Source Code", url="https://github.com/charindithjaindu/AnyDL-Bot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -79,19 +78,17 @@ async def about(client, message):
                chat_id=message.chat.id,
                text="""<b>About AnyDL Bot!</b>
 
-<b>♞ Developer:</b> <a href="https://t.me/ImJanindu">Janindu 🇱🇰</a>
-
-<b>♞ Support:</b> <a href="https://t.me/InfinityBOTs_Support">Infinity BOTs Support</a>
+<b>♞ Developer:</b> <a href="https://t.me/charindith">Jaindu 🇱🇰</a>
 
 <b>♞ Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 
-<b>~ @Infinity_BOTs</b>""",
+<b>~This is a fork of AnyDL-Bot by Infinity Bots </b>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
                                             "Back", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
+                                            "Main Source Code by Jason", url="https://github.com/Imjanindu/AnyDL-Bot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -100,8 +97,7 @@ async def about(client, message):
 
 # https://docs.pyrogram.org/start/examples/bot_keyboards
 # Reply with inline keyboard
-@Jebot.on_message(filters.private
-                   & filters.text
+@Jebot.on_message( filters.text
                    & ~filters.edited
                    & filters.regex(YTDL_REGEX))
 async def ytdl_with_button(_, message: Message):
