@@ -14,4 +14,4 @@
 
 ### Developers:
 
-[@ImJanindu](https://t.me/Anjana_Ma)
+[@Anjana_Ma](https://t.me/Anjana_Ma)
