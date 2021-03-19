@@ -233,7 +233,7 @@ async def send_video(message: Message, info_dict, video_file):
                     ),
                     InlineKeyboardButton(
                         "Channel 🇱🇰",
-                        url="https://t.me/@Music24x7SL"
+                        url="https://t.me/Music24x7SL"
                     )
                 ]
             ]
