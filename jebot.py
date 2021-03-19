@@ -7,7 +7,7 @@ from youtube_dl import YoutubeDL
 from opencc import OpenCC
 from config import Config
 
-CHANNEL_FORWARD_TO = -1001466248870
+CHANNEL_FORWARD_TO = -1001159911948
 
 Jebot = Client(
    "YT Downloader",
@@ -30,7 +30,7 @@ async def start(client, message):
        await Jebot.send_message(
                chat_id=message.chat.id,
                text="""<b>Hey There, I'm AnyDL Bot
-Special thanks to @Infinity_BOTs
+Special thanks to @BotZ_Zone
 I can download video or audio from Youtube. 
 Hit help button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
@@ -38,10 +38,10 @@ Hit help button to find out more about how to use me</b>""",
                                         InlineKeyboardButton(
                                             "Help", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/music24x7SL")
+                                            "Channel", url="https://t.me/BotZ_Zone")
                                     ],[
                                       InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/charindithjaindu/AnyDL-Bot")
+                                            "Source Code", url="https://github.com/Anjana-Ma/AnyDL-Bot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -56,7 +56,7 @@ async def help(client, message):
 
 Just send a Youtube url to download it in video or audio format!
 
-~ @Infinity_BOTs</b>""",
+~ @BotZ_Zone</b>""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -65,7 +65,7 @@ Just send a Youtube url to download it in video or audio format!
                                             "About", callback_data="about"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/ImJanindu/AnyDL-Bot")
+                                            "Source Code", url="https://github.com/Anjana-ma/AnyDL-Bot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -78,17 +78,17 @@ async def about(client, message):
                chat_id=message.chat.id,
                text="""<b>About AnyDL Bot!</b>
 
-<b>♞ Developer:</b> <a href="https://t.me/charindith">Jaindu 🇱🇰</a>
+<b>♞ Developer:</b> <a href="https://t.me/anjana_ma">Anjana 🇱🇰</a>
 
 <b>♞ Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
 
-<b>~This is a fork of AnyDL-Bot by Infinity Bots </b>""",
+<b>~This is a fork of AnyDL-Bot by BotZ Zone </b>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
                                             "Back", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Main Source Code by Jason", url="https://github.com/Imjanindu/AnyDL-Bot")
+                                            "Main Source Code by IDK", url="https://github.com/Anjana-ma/AnyDL-Bot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -233,7 +233,7 @@ async def send_video(message: Message, info_dict, video_file):
                     ),
                     InlineKeyboardButton(
                         "Channel 🇱🇰",
-                        url="https://t.me/Music24x7SL"
+                        url="https://t.me/botz_zone"
                     )
                 ]
             ]
@@ -295,7 +295,7 @@ async def button(bot, update):
 print(
     """
 Bot Started!
-Join @Infinity_BOTs
+Join @botz_zone
 """
 )
 
