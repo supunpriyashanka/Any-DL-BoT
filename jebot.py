@@ -29,8 +29,8 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey There, I'm AnyDL Bot
-Special thanks to @BotZ_Zone
+               text="""<b>Hey There, I'm AnyDL BoT
+Special thanks to @NET_HACKER_BOTs_chat
 I can download video or audio from Youtube. 
 Hit help button to find out more about how to use me</b>""",   
                             reply_markup=InlineKeyboardMarkup(
@@ -38,10 +38,10 @@ Hit help button to find out more about how to use me</b>""",
                                         InlineKeyboardButton(
                                             "Help", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/BotZ_Zone")
+                                            "Channel", url="https://t.me/NET_HACKER_BOTs")
                                     ],[
                                       InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/Anjana-Ma/AnyDL-Bot")
+                                            "Source Code", url="https://github.com/supunpriyashanka/Any-DL-BoT")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -52,11 +52,11 @@ async def help(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>AnyDL Bot Help!
+               text="""<b>AnyDL BoT Help!
 
 Just send a Youtube url to download it in video or audio format!
 
-~ @BotZ_Zone</b>""",
+~ @NET_HACKER_BOTs</b>""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -65,7 +65,7 @@ Just send a Youtube url to download it in video or audio format!
                                             "About", callback_data="about"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/Anjana-ma/AnyDL-Bot")
+                                            "Source Code", url="https://github.com/supunpriyashanka/Any-DL-BoT")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -76,19 +76,17 @@ async def about(client, message):
     if message.chat.type == 'private':   
         await Jebot.send_message(
                chat_id=message.chat.id,
-               text="""<b>About AnyDL Bot!</b>
+               text="""<b>About AnyDL BoT!</b>
 
-<b>♞ Developer:</b> <a href="https://t.me/anjana_ma">Anjana 🇱🇰</a>
+<b>♞ Developer:</b> <a href="https://t.me/Supun_priyashanka">Supun 🇱🇰</a>
 
-<b>♞ Library:</b> <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>
-
-<b>~This is a fork of AnyDL-Bot by BotZ Zone </b>""",
+<b>~This is a fork of AnyDL-Bot by NET_HACKER_BOTs </b>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
                                             "Back", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Main Source Code by IDK", url="https://github.com/Anjana-ma/AnyDL-Bot")
+                                            "Main Source Code", url="https://github.com/supunpriyashanka/Any-DL-BoT")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -295,7 +293,7 @@ async def button(bot, update):
 print(
     """
 Bot Started!
-Join @botz_zone
+Join @NET_HACKER_BOTs
 """
 )
 
