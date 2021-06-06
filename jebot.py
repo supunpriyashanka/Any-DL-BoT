@@ -41,7 +41,9 @@ Hit help button to find out more about how to use me</b>""",
                                             "Channel", url="https://t.me/NET_HACKER_BOTs")
                                     ],[
                                       InlineKeyboardButton(
-                                            "Source Code", url="https://github.com/supunpriyashanka/Any-DL-BoT")
+                                            "Source Code", url="https://github.com/supunpriyashanka/Any-DL-BoT"),
+                                      InlineKeyboardButton(
+                                            "Developer", url="https://t.me/Supun_priyashanka")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
