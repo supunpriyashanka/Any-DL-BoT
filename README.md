@@ -1,17 +1,16 @@
-# AnyDL Bot ❤
+# Any-DL-BoT ❤
 
-## This bot can download video or audio from youtube quickly! Can be found in telegram as [@bot :\](https://t.me/)
+## This bot can download video or audio from youtube quickly!
 
 ### Deploy to Heroku 🏃‍♂
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Anjana-Ma/AnyDL-Bot)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/supunpriyashanka/Any-DL-BoT)
 
 ### Credits:
 
-[BotZ Zone](https://t.me/BotZ_Zone)
+[NET HACKER BOT](https://t.me/NET_HACKER_BOTs_chat)
 
-[Pyrogram Library](https://github.com/pyrogram/pyrogram)
 
 ### Developers:
 
-[@Anjana_Ma](https://t.me/Anjana_Ma)
+[@Supun Priyashanka](https://t.me/Supun_priyashanka)
